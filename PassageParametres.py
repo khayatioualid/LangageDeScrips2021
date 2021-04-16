@@ -37,11 +37,24 @@ def somme32(**D):
     s = x + y + z + w
     return s
 
+def produit(*T):
+    p = 1
+    print(T)
+    for v in T:
+         p = p * v
+    return p
+
+def sommeProduit(*T):
+    s = somme2(*T)
+    p = produit(*T)
+    return s, p
+
 # print(somme0(5, 10))
-
 #print(somme1(5, 10, 10))
-
 #print(somme2(5, 10, 10, 25))
-
-print(somme31(x=5, w=10, y=10, z=25))
-print(somme32(y=10, z=25, x=5))
+#print(somme31(x=5, w=10, y=10, z=25))
+#print(somme32(y=10, z=25, x=5))
+sp = sommeProduit(5, 10, 10, 25)
+print(sp)
+s, p = sommeProduit(5, 10, 10, 25)
+print(s, p)

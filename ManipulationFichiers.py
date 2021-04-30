@@ -6,8 +6,8 @@ def ChargerFichierCSV(fileName):
     for ligne in f:
         ligne=parseLine(ligne,colonnes)
         L.append(ligne)
-    return L
     f.close()
+    return L
 
 def parseLine(ligne,colonnes):
     tab = clean(ligne).split(";")

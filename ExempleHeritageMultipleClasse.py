@@ -42,6 +42,8 @@ class etudiant(bachelier, personne ):
 
 print(personne.nbrInstance)
 p1 = personne("n1", "p1", 15)
+#personne.affiche(p1)
+
 p1.affiche()
 e1 = etudiant("en1", "ep1", 15, "ingenieur",15)
 e1.affiche()
